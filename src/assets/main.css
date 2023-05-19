@@ -1,0 +1,38 @@
+@import './base.css';
+
+#app {
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
+
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+.shadow {
+    box-shadow: var(--base-shadow);
+}
+
+.rounded {
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    border-radius: var(--radius);
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+@media (min-width: 1280px) {
+    #app {
+        padding: 66px 16px 16px 66px;
+    }
+}
