@@ -5,23 +5,20 @@ import MobileNav from "@/components/MobileNav.vue";
 </script>
 
 <template>
-    <TheHeader/>
-    <TheSidebar/>
-    <MobileNav/>
-    <main class="main">
-        <router-view/>
-    </main>
+  <router-view class="wrapper"/>
+  <router-view name="Header" class="header"/>
+  <router-view name="Sidebar" class="aside"/>
 </template>
 
 <style scoped>
 main.main {
-    display: grid;
+  display: grid;
 
-    @media (min-width: 1280px) {
-        height: calc(100vh - 82px);
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 16px;
-    }
+  @media (min-width: 1280px) {
+    height: calc(100vh - 82px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+  }
 }
 </style>

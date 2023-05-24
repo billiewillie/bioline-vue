@@ -1,11 +1,5 @@
-<script>
+<script setup>
 import DocsNav from "@/components/DocsNav.vue";
-
-export default {
-    components: {
-        DocsNav
-    }
-}
 </script>
 
 <template>
@@ -38,7 +32,6 @@ aside.aside {
     }
 
 }
-
 aside.aside .docs-nav__menu {
     display: flex;
     flex-direction: column;

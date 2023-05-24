@@ -1,31 +1,28 @@
-<script>
-export default {
-    name: 'BaseNav',
-    data() {
-        return {
-            navList: [
-                {
-                    title: 'Новости',
-                    path: '/news'
-                },
-                {
-                    title: 'Новичку',
-                    path: '/newbie'
-                }, {
-                    title: 'Фотогалерея',
-                    path: '/gallery'
-                }, {
-                    title: 'Наша команда',
-                    path: '/team'
-                },
-                {
-                    title: 'О компании',
-                    path: '/about'
-                }
-            ]
-        }
+<script setup>
+import {ref} from "vue";
+
+const navList = ref([
+    {
+        title: 'Новости',
+        path: '/news'
+    },
+    {
+        title: 'Новичку',
+        path: '/newbie'
+    },
+    {
+        title: 'Фотогалерея',
+        path: '/galleries'
+    },
+    {
+        title: 'Наша команда',
+        path: '/team'
+    },
+    {
+        title: 'Login',
+        path: '/login'
     }
-}
+]);
 </script>
 
 <template>
@@ -39,7 +36,12 @@ export default {
 </template>
 
 <style scoped>
+.base-nav__menu {
+    justify-content: space-between;
+}
+
 .base-nav__link {
     color: var(--white);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 </style>

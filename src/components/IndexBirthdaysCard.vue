@@ -7,13 +7,6 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: "IndexDefaultCard",
-    props: {}
-}
-</script>
-
 <style scoped>
 .birthdays-card {
     background: linear-gradient(180deg, #57E8DF 16.25%, #A557CA 88.31%);

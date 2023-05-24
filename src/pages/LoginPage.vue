@@ -3,7 +3,9 @@
 </script>
 
 <template>
-<p>About</p>
+    <div class="login">
+        Login Page
+    </div>
 </template>
 
 <style scoped>

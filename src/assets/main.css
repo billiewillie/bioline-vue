@@ -1,11 +1,7 @@
 @import './base.css';
 
 #app {
-    margin: 0 auto;
-    padding: 2rem;
     min-height: 100vh;
-
-    font-weight: normal;
 }
 
 a {
@@ -32,7 +28,7 @@ ul {
 }
 
 @media (min-width: 1280px) {
-    #app {
+    .basepage {
         padding: 66px 16px 16px 66px;
     }
 }

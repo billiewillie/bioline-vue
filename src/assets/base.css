@@ -1,10 +1,11 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
     --blue-dark: #2B365A;
     --white: #ffffff;
     --black: #000000;
     --purple: #A557CA;
     --gray: #eeeeee;
+    --orange: #E85959;
+    --blue-light: #57E8DF;
 
     --shadow-color: rgba(0, 0, 0, 0.14);
 
